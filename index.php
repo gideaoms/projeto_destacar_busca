@@ -39,15 +39,6 @@ class DestacarPesquisa {
         return implode(' ', $this->conteudo);
     }
 
-    private function pegarParteConteudo() {
-        foreach ($this->conteudo as $palavra) :
-            if (strpos($palavra, $palavra)) :
-
-            endif;
-        endforeach;
-        return array_slice($this->conteudo, $this->numeroIniciador, $this->quantidadeTexto);
-    }
-
     private function setNumeroIniciador($key) {
         if ($key < ceil($this->quantidadeTexto / 2)) :
             $this->numeroIniciador = 0;
